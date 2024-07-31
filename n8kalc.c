@@ -18,25 +18,27 @@ int main(int argc, char * argv[]){
 	char operationSymbol;
 	long double result;
 	printf("Calculator Active!\n");
-	printf(">>");
-	scanf("%Lf %c %Lf", &firstOperand, &operationSymbol, &secondOperand);
-	switch (operationSymbol){
-		case '+':
-			result = firstOperand + secondOperand;
-			break;
-		case '-':
-			result = firstOperand - secondOperand;
-			break;
-		case '*':
-			result = firstOperand * secondOperand;
-			break;
-		case '/':
-			result = firstOperand / secondOperand;
-			break;
-		default:
-			printf("Invalid Operation");
+	while (1){
+		printf(">>");
+		if (scanf("%Lf %c %Lf", &firstOperand, &operationSymbol, &secondOperand) < 1)
 			return 1;
+		switch (operationSymbol){
+			case '+':
+				result = firstOperand + secondOperand;
+				break;
+			case '-':
+				result = firstOperand - secondOperand;
+				break;
+			case '*':
+				result = firstOperand * secondOperand;
+				break;
+			case '/':
+				result = firstOperand / secondOperand;
+				break;
+			default:
+				printf("Invalid Operation");
+				return 1;
+		}
+		printf("Answer: %Lf\n", result);
 	}
-	printf("%Lf", result);
-	return 0;
 }

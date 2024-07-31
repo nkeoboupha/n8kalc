@@ -3,7 +3,7 @@ A CLI-focused calculator designed to keep your hands glued to your keyboard when
 ## Usage:
 ```
 n8kalc↵
-<operand 1> <operator> <operand 2>↵
+>><operand 1> <operator> <operand 2>↵
 ```
 The following are valid operators: +, -, *, /
 
