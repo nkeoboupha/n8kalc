@@ -7,6 +7,8 @@ n8kalc↵
 ```
 The following are valid operators: +, -, *, /
 
+Currently, any invalid input is considered to be a "quit" command
+
 ---
 ### Currently Implemented:
 - Four Functions
